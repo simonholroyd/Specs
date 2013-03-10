@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/simonholroyd/GPUImage.git", :commit => '3a6e5d4bd1924b53620945d3b062c766bb1ff5d4' }
   s.platform     = :ios, '5.0'
   s.source_files = 'Framework/Source' 
+  s.frameworks   = ['OpenGLES', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'AVFoundation']
   s.requires_arc = true
 end
